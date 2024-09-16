@@ -9,6 +9,7 @@ function Projects() {
     <section id="projects" className="projects-section">
       <h3>Projects</h3>
       <div className="row">
+        {/* Project 1 */}
         <div className="col">
           <div className="card">
             <div className="card-image">
@@ -16,15 +17,27 @@ function Projects() {
             </div>
             <div className="card-content">
               <h4 className="card-title">File Tracking System</h4>
-              <p>Designed and deployed a File Tracking System to efficiently oversee
-                document movement and status across the organization or institute.<br></br><b>Key Technology:</b> Php,
-                Html, CSS, Bootstrap, JavaScript, MySQL</p>
-            </div>
-            <div className="card-action">
-              <a href="https://github.com/avinash-akv/File-Tracking-System">View Project</a>
+              <p>
+                Designed and deployed a File Tracking System to efficiently oversee
+                document movement and status across the organization or institute.
+              </p>
+              <div className="technologies">
+                <h5>Technologies Used:</h5>
+                <span className="badge">Php</span>
+                <span className="badge">Javascript</span>
+                <span className="badge">Bootstrap</span>
+                <span className="badge">MySQL</span>
+                <span className="badge">PhpMyAdmin</span>
+              </div>
+              <div className="card-action">
+                <a href="https://github.com/avinash-akv/File-Tracking-System">Live Demo</a>
+                <a href="https://github.com/avinash-akv/File-Tracking-System">GitHub</a>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Project 2 */}
         <div className="col">
           <div className="card">
             <div className="card-image">
@@ -32,25 +45,46 @@ function Projects() {
             </div>
             <div className="card-content">
               <h4 className="card-title">ANNIE - The Voice Assistant</h4>
-              <p>Implemented ANNIE, a Virtual Voice Assistant for PC, that
-                streamlined tasks like adding calendar events and streaming YouTube.<br></br><b>Key Technology:</b> Python, Qt Designer.</p>
-            </div>
-            <div className="card-action">
-              <a href="https://github.com/avinash-akv/ANNIE-The-Voice-Assistant">View Project</a>
+              <p>
+                Implemented ANNIE, a Virtual Voice Assistant for PC, that
+                streamlined tasks like adding calendar events and streaming YouTube.
+              </p>
+              <div className="technologies">
+                <h5>Technologies Used:</h5>
+                <span className="badge">Python</span>
+                <span className="badge">SpeechRecognition</span>
+                <span className="badge">PyAutoGUI</span>
+                <span className="badge">QtDesigner</span>
+              </div>
+              <div className="card-action">
+                <a href="https://github.com/avinash-akv/ANNIE-The-Voice-Assistant">Live Demo</a>
+                <a href="https://github.com/avinash-akv/ANNIE-The-Voice-Assistant">GitHub</a>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Project 3 */}
         <div className="col">
           <div className="card">
             <div className="card-image">
-              <img src={project3Image} alt="Project 2" />
+              <img src={project3Image} alt="Project 3" />
             </div>
             <div className="card-content">
               <h4 className="card-title">Portfolio Website</h4>
-              <p>This is a personal portfolio website designed to showcase the professional skills, projects, and achievements. The website features a clean, modern design that reflects a professional image, making it easy for potential employers or clients to navigate through your work and contact you.<br></br><b>Key Technology:</b> Html5 , CSS3 , JavaScript.</p>
-            </div>
-            <div className="card-action">
-              <a href="https://avinash-akv.github.io/Portfoilo/">View Project</a>
+              <p>
+                This is a personal portfolio website designed to showcase professional skills, projects, and achievements. The website features a clean, modern design.
+              </p>
+              <div className="technologies">
+                <h5>Technologies Used:</h5>
+                <span className="badge">HTML</span>
+                <span className="badge">CSS</span>
+                <span className="badge">Javascript</span>
+              </div>
+              <div className="card-action">
+                <a href="https://avinash-akv.github.io/Portfoilo/">Live Demo</a>
+                <a href="https://github.com/avinash-akv/Portfoilo/">GitHub</a>
+              </div>
             </div>
           </div>
         </div>

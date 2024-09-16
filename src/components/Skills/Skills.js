@@ -16,7 +16,7 @@ import illustratorImage from '../../images/skills/illustrator.png';
 function Skills() {
   return (
     <section id="skills" className="skills-section">
-      <h3>Skills</h3>
+      <h3>Skills & Expertise</h3>
       <div className="skills-container">
         <div className="skill-item">
           <img src={htmlImage} alt="HMTL" />

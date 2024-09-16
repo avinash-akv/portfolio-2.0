@@ -1,23 +1,23 @@
+/* Education Section */
 .education-section {
-  background-color: #1e1e1e;
-  border-radius: 10px;
-  padding: 40px 20px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  margin-top: 50px;
+  background-color: #070F2B; /* Deep navy blue */
+  color: #e0e0e0; /* Light gray text */
+  border-radius: 15px;
+  padding: 50px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  margin: 30px auto;
+  max-width: 1200px;
   position: relative;
   overflow: hidden;
-  margin: 40px 40px;
 }
 
+/* Section Title */
 .education-section h3 {
   text-align: center;
-  font-size: 28px;
-  color: #f39c12;
-  margin-bottom: 20px;
+  font-size: 32px;
+  color: #f39c12; /* Accent color */
+  margin-bottom: 30px;
   font-weight: 700;
-  position: relative;
-  padding-bottom: 40px;
-
 }
 
 .education-section h3::after {
@@ -25,24 +25,61 @@
   display: block;
   width: 80px;
   height: 4px;
-  background-color: #f39c12;
-  margin: 10px auto 0 auto;
+  background-color: #f39c12; /* Accent color */
+  margin: 15px auto 0;
   border-radius: 2px;
-  
 }
 
-.education-item {
-  margin-bottom: 20px;
-  margin-left: 30px;
+/* Timeline Container */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.education-item h4 {
-  font-size: 25px;
-  color: #f39c12;
+/* Timeline Item */
+.timeline-item {
+  position: relative;
+  padding: 20px 0;
+  margin: 0 0 40px 0;
+  border-left: 2px solid #f39c12; /* Accent color */
+  padding-left: 20px; /* Add space between the timeline line and text */
 }
 
-.education-item p {
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #f39c12; /* Accent color */
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #070F2B; /* Deep navy blue */
+}
+
+.timeline-item h4 {
+  font-size: 24px;
+  color: #ffffff; /* White text */
+  margin-bottom: 10px;
+}
+
+.timeline-item p {
   font-size: 16px;
-  color: #bbbbbb;
-  margin: 5px 0;
+  color: #bbbbbb; /* Light gray text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline-item {
+    padding: 15px 0;
+    padding-left: 30px; /* Adjust space for smaller screens */
+  }
+
+  .timeline-item::after {
+    left: -6px;
+    width: 12px;
+    height: 12px;
+  }
 }

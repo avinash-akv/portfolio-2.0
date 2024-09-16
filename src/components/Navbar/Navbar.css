@@ -1,97 +1,90 @@
+/* Navbar Styles */
 .nav-wrapper {
-  background-color: #1e1e1e;
+  background-color: #070F2B; /* Deep navy blue */
+  color: #ffffff; /* White text */
+  border-bottom: 1px solid #1B1A55; /* Dark blue border for separation */
   padding: 10px 20px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensures the navbar is on top of other elements */
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .brand-logo {
   font-size: 24px;
-  color: #f39c12;
-  font-weight: bold;
-  text-transform: uppercase;
+  color: #f39c12; /* Accent color */
+  text-decoration: none;
+  font-weight: 700;
 }
 
-#nav-mobile {
+/* Desktop Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
 }
 
-#nav-mobile li {
-  margin-left: 20px;
+.nav-links li {
+  margin: 0;
 }
 
-#nav-mobile li a {
-  color: #f39c12;
+.nav-links a {
+  color: #ffffff; /* White text */
+  text-decoration: none;
   font-size: 16px;
-  transition: color 0.3s ease;
-  padding: 10px;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
-#nav-mobile li a:hover {
-  color: #ffffff;
+.nav-links a:hover {
+  color: #f39c12; /* Accent color on hover */
 }
 
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffffff; /* White text */
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  #nav-mobile {
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #1e1e1e;
-    position: absolute;
-    right: 0;
-    top: 50px;
-    padding: 10px;
-    border-radius: 5px;
+  .nav-links {
     display: none;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  }
-
-  #nav-mobile.active {
-    display: block;
-  }
-
-  #nav-mobile li {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-
-  .brand-logo {
-    font-size: 20px;
-  }
-}
-
-.section {
-  padding: 50px 20px;
-}
-
-.section h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 28px;
-}
-
-.section-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-@media (max-width: 768px) {
-  .section-content {
     flex-direction: column;
-    align-items: center;
+    position: absolute;
+    top: 60px; /* Below the navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #040b21; /* Deep navy blue */
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    align-items: center; /* Center items horizontally */
+  }
+
+  .nav-links.open {
+    display: flex; /* Show menu when active */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block; /* Show menu toggle button on mobile */
   }
 }

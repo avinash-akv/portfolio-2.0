@@ -1,77 +1,74 @@
+/* Skills Section */
 .skills-section {
-  background-color: #1e1e1e;
-  border-radius: 10px;
-  padding: 40px 20px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  padding: 60px 20px;
-  margin-top: 50px;
+  background-color: #070F2B; /* Deep navy blue */
+  border-radius: 15px;
+  padding: 50px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  margin: 30px auto;
+  max-width: 1200px;
   position: relative;
   overflow: hidden;
-  margin: 40px 40px;
 }
 
+/* Section Title */
 .skills-section h3 {
   text-align: center;
-  font-size: 28px;
-  color: #f39c12;
-  margin-bottom: 20px;
+  font-size: 32px;
+  color: #f39c12; /* Accent color */
+  margin-bottom: 30px;
   font-weight: 700;
-  position: relative;
 }
 
 .skills-section h3::after {
   content: '';
   display: block;
-  width: 40px;
+  width: 100px;
   height: 4px;
-  background-color: #f39c12;
-  margin: 10px auto 0 auto;
+  background-color: #f39c12; /* Accent color */
+  margin: 15px auto 0;
   border-radius: 2px;
-
 }
 
+/* Skills Container */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+  gap: 30px; /* Space between skill items */
 }
 
+/* Skill Item */
 .skill-item {
   text-align: center;
   width: 100%;
   max-width: 250px;
-  margin: 10px;
-  text-align: center;
   transition: transform 0.3s ease;
-  margin-top: 40px;
 }
 
 .skill-item img {
-  margin-bottom: 10px;
   width: 80px;
   height: 80px;
   border-radius: 20%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .skill-item p {
   font-size: 16px;
-  color: #bbbbbb;
+  color: #e0e0e0; /* Light gray text */
 }
 
+/* Hover Effect */
 .skill-item:hover {
   transform: scale(1.05);
 }
 
 .skill-item:hover p {
-  color: #f39c12;
+  color: #f39c12; /* Accent color */
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .skill-item {
     max-width: 100%;
-    display: flexbox;
-    
   }
 }
