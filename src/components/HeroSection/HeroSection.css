@@ -3,34 +3,40 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
-  background-color: #070F2B; /* Deep navy blue */
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  padding: 60px; /* Increased padding for a spacious look */
+  background-color: #1B1A55; /* Dark blue for a modern feel */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7); /* Deeper shadow for added depth */
   color: #ffffff;
-  margin: 30px auto;
+  margin: 40px auto; /* Increased margin for better separation */
   max-width: 1200px;
-  border-radius: 15px;
+  border-radius: 20px; /* Softer rounded corners */
   overflow: hidden;
-  margin-top: 80px  ;
+  margin-top: 80px;
 }
 
 /* Hero Content */
 .hero-content {
   flex: 1;
   max-width: 600px;
-  margin-left: 20px;
+  margin-left: 30px; /* Increased margin for better spacing */
 }
 
 .hero-content h1 {
-  font-size: 40px;
+  font-size: 48px; /* Larger font size for emphasis */
   color: #f39c12; /* Accent color */
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .hero-content h2 {
-  font-size: 28px;
-  color: #ffffff;
+  font-size: 32px; /* Larger font size for readability */
+  color: #e0e0e0; /* Light gray for high contrast */
   margin: 10px 0 20px 0;
+  border-right: 2px solid #e0e0e0; /* Light gray border for a modern look */
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
 }
 
 /* Social Links */
@@ -41,37 +47,40 @@
 }
 
 .social-links a {
-  color: #ffffff;
-  font-size: 32px;
+  color: #ffffff; /* White for social icons */
+  font-size: 36px; /* Larger font size for visibility */
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .social-links a:hover {
-  color: #f39c12; /* Accent color */
-  transform: scale(1.1); /* Slightly enlarge on hover */
+  color: #f39c12; /* Accent color on hover */
+  transform: scale(1.2); /* Slightly larger on hover */
 }
 
 /* Hero Image */
 .hero-image {
   flex: 1;
   text-align: right;
-  margin-right: 20px;
+  margin-right: 30px; /* Increased margin for better spacing */
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 400px; /* Adjusted to match theme */
+  max-width: 450px; /* Larger image size */
+  height: 450px; /* Consistent circular height */
   border-radius: 50%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* Increased shadow for depth */
+  background-image: linear-gradient(to top, #1B1A55, #070F2B); /* Dark gradient for a modern touch */
 }
 
 /* Button */
 .btn {
   background-color: #f39c12; /* Accent color */
   color: #ffffff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 18px;
+  padding: 15px 30px; /* Larger padding for prominence */
+  border-radius: 12px; /* Softer border radius */
+  font-size: 20px; /* Larger font size for readability */
   transition: background-color 0.3s ease, transform 0.2s ease;
   margin-top: 20px;
   text-decoration: none; /* Remove underline */
@@ -79,8 +88,8 @@
 }
 
 .btn:hover {
-  background-color: #d35400; /* Darker shade for hover */
-  transform: scale(1.05); /* Slight hover effect */
+  background-color: #d35400; /* Slightly darker shade for hover effect */
+  transform: scale(1.1); /* Slight hover effect */
 }
 
 /* Responsive Design */
@@ -88,7 +97,7 @@
   .hero-section {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 30px;
+    padding: 40px; /* Adjusted padding for mobile view */
   }
 
   .hero-image {
@@ -97,7 +106,8 @@
   }
 
   .hero-image img {
-    max-width: 200px; /* Smaller image on mobile */
+    max-width: 350px; /* Adjusted size for mobile */
+    height: 350px; /* Consistent circular height */
   }
 
   .hero-content {
@@ -111,5 +121,31 @@
 
   .btn {
     margin: 10px auto 0;
+  }
+}
+
+/* Keyframes for Animations */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #e0e0e0; /* Light gray */
   }
 }

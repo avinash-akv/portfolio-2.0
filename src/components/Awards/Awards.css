@@ -1,0 +1,89 @@
+/* Awards Section */
+.awards-section {
+  background-color: #1B1A55; /* Dark blue for consistency */
+  color: #e0e0e0; /* Light gray text for better readability */
+  padding: 60px; /* Increased padding for a spacious feel */
+  text-align: center;
+  border-radius: 20px; /* Softer rounded corners */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7); /* Deeper shadow for added depth */
+  margin: 40px auto; /* Increased margin for separation */
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Awards Content */
+.awards-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+.awards-content h2 {
+  font-size: 36px; /* Prominent font size */
+  color: #f39c12; /* Accent color */
+  margin-bottom: 40px; /* Increased spacing */
+}
+
+.awards-content h2::after {
+  content: '';
+  display: block;
+  width: 160px; /* Wider underline */
+  height: 5px; /* Thicker underline */
+  background-color: #f39c12; /* Accent color */
+  margin: 20px auto 0;
+  border-radius: 5px; /* Rounded corners for underline */
+}
+
+/* Awards List */
+.awards-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Award Item */
+.award-item {
+  background-color: #070F2B; /* Deep navy blue for consistency */
+  border-radius: 15px; /* Softer rounded corners */
+  padding: 25px; /* Increased padding for comfort */
+  margin: 15px 0; /* Increased margin for separation */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6); /* Deeper shadow on hover */
+}
+
+.award-item h3 {
+  font-size: 28px; /* Larger font size */
+  color: #f39c12; /* Accent color */
+  margin: 0 0 10px 0; /* Margin below heading */
+}
+
+.award-item p {
+  font-size: 18px; /* Larger font size for better readability */
+  color: #e0e0e0; /* Light gray text */
+  margin: 0; /* Remove default margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .awards-content h2 {
+    font-size: 28px; /* Smaller font size for mobile */
+  }
+
+  .award-item {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .award-item h3 {
+    font-size: 24px; /* Adjust heading size */
+  }
+
+  .award-item p {
+    font-size: 16px; /* Adjust paragraph size */
+  }
+}

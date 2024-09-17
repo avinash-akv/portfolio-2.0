@@ -1,17 +1,24 @@
 import React from 'react';
 import './About.css';
+import aboutImage from '../../images/men.png'; // Adjust the path based on your folder structure
 
 function About() {
   return (
     <section id="about" className="about-section">
       <h3>About</h3>
-      <p>Hello! I'm <b>Avinash Kumar Verma</b>, a passionate and dedicated tech enthusiast just completing my master degree in Computer Application at Kamla Nehru Institute of Technology, Sultanpur. With a solid foundation in Computer Application from my Bachelor’s degree at Delhi Technical Campus, I’ve honerd a diverse skill set spanning <b>Web Designing</b>, <b>Data Analysis</b>, and <b>Graphic Design</b>.<br></br>
+      <div className="about-content">
+        <div className="about-image">
+          <img src={aboutImage} alt="Avinash Kumar Verma" />
+        </div>
+        <div className="about-text">
 
-        My journey in tech has been driven by a love for solving complex problems and creating innovative solutions. Whether it's developing efficient front-end interfaces, crafting interactive designs, or visualizing data to extract actionable insights, I strive to deliver high-impact results.<br></br>
+          <p>Hello! I'm <b>Avinash Kumar Verma</b>, a tech enthusiast with a Master’s degree in Computer Application from Kamla Nehru Institute of Technology, Sultanpur, and a Bachelor’s from Delhi Technical Campus. My expertise lies in Web Designing, Data Analysis, and Graphic Design.<br></br>
 
-        I've worked on projects like a File Tracking System that significantly boosted workflow efficiency and a Virtual Voice Assistant, ANNIE, that enhanced productivity through streamlined tasks. My hands-on experience with tools and technologies such as Python, Qt Designer, Power BI, Adobe Illustrator, and more has equipped me with the versatility to tackle various challenges in the tech landscape.<br></br>
+            I’m passionate about solving complex problems and building innovative solutions. I’ve developed efficient front-end interfaces, crafted interactive designs, and visualized data to uncover actionable insights. Notable projects include a File Tracking System that boosted workflow efficiency and a Virtual Voice Assistant, ANNIE, which streamlined productivity.<br></br>
 
-        Beyond my technical skills, I am continuously learning and expanding my expertise, as demonstrated by my certifications in Power BI, Python, and Graphic Design. I believe in the power of continuous improvement and innovation, and I’m excited to contribute to projects that push the boundaries of what's possible.</p>
+            With hands-on experience in tools like Python, Qt Designer, Power BI, and Adobe Illustrator, I’m equipped to handle a wide range of challenges. I also hold certifications in Power BI, Python, and Graphic Design.</p>
+        </div>
+      </div>
     </section>
   );
 }

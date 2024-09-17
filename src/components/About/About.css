@@ -1,39 +1,82 @@
 /* About Section */
 .about-section {
-  background-color: #070F2B; /* Deep navy blue */
-  border-radius: 15px;
-  padding: 50px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-  margin: 30px auto;
+  background-color: #1B1A55; /* Dark blue for modern look */
+  border-radius: 20px; /* Softer rounded corners */
+  padding: 60px; /* Increased padding for spacious feel */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7); /* Deeper shadow for added depth */
+  margin: 40px auto; /* Increased margin for separation */
   max-width: 1200px;
-  text-align: center; /* Center-align all text inside the section */
   position: relative;
   overflow: hidden;
 }
 
 /* Section Title */
 .about-section h3 {
-  font-size: 32px;
-  color: #f39c12;
-  margin-bottom: 30px;
-  font-weight: 700;
+  font-size: 36px; /* Larger font size for prominence */
+  color: #f39c12; /* Accent color */
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .about-section h3::after {
   content: '';
   display: block;
-  width: 80px;
-  height: 4px;
-  background-color: #f39c12; 
-  margin: 15px auto 0;
-  border-radius: 2px;
+  width: 100px; /* Wider underline */
+  height: 5px; /* Thicker underline */
+  background-color: #f39c12; /* Accent color */
+  margin: 20px auto 0;
+  border-radius: 5px; /* Rounded corners for underline */
+}
+
+/* Section Content */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Increased space between image and text */
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 250px; /* Prevent image from becoming too small */
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 6000px; /* Larger image size */
+  border-radius: 15px; /* Rounded corners for image */
+  object-fit: cover; /* Ensure image fits well */
 }
 
 /* Section Text */
-.about-section p {
-  font-size: 18px;
+.about-text {
+  flex: 2;
+  text-align: left; /* Align text to the left */
+  max-width: 800px; /* Restrict text width for readability */
   color: #e0e0e0; /* Light gray text */
-  line-height: 1.6;
-  margin: 40px auto;
-  max-width: 800px;
+  line-height: 1.8; /* Improved line height for readability */
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 18px; /* Larger font size for readability */
+  margin: 20px 0; /* Adjusted margin for spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-bottom: 20px; /* Space below image on mobile */
+  }
+
+  .about-image img {
+    max-width: 100%; /* Ensure image fits well on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
 }

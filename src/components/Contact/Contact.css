@@ -1,12 +1,12 @@
 /* Contact Section */
 .contact-section {
-  padding: 50px;
-  background-color: #070F2B; /* Deep navy blue */
-  color: #ffffff;
-  margin: 30px auto;
+  padding: 60px ; /* Adjusted padding for better spacing on smaller screens */
+  background-color: #1B1A55; /* Dark blue for consistency */
+  color: #e0e0e0; /* Light gray text for readability */
+  margin: 40px auto; /* Increased margin for separation */
   max-width: 1200px;
-  border-radius: 15px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  border-radius: 20px; /* Softer rounded corners */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7); /* Deeper shadow for added depth */
   position: relative;
   overflow: hidden;
 }
@@ -14,10 +14,10 @@
 /* Section Title */
 .contact-section h2 {
   text-align: center;
-  font-size: 36px;
+  font-size: 36px; /* Prominent font size */
   color: #f39c12; /* Accent color */
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 40px; /* Increased spacing */
   position: relative;
 }
 
@@ -26,8 +26,8 @@
   display: block;
   width: 100px;
   height: 5px;
-  background-color: #f39c12;
-  margin: 10px auto 0;
+  background-color: #f39c12; /* Accent color */
+  margin: 15px auto 0; /* Adjusted margin */
   border-radius: 3px;
 }
 
@@ -44,25 +44,26 @@
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 25px; /* Increased spacing between fields */
 }
 
 .form-group label {
-  font-size: 18px;
-  margin-bottom: 8px;
-  color: #d1d1d1;
+  font-size: 18px; /* Consistent font size */
+  margin-bottom: 10px; /* Spacing below label */
+  color: #d1d1d1; /* Light gray for labels */
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #444;
-  background-color: #1B1A55; /* Dark blue */
-  color: #ffffff;
-  font-size: 16px;
-  border-radius: 8px;
+  padding: 14px; /* Increased padding */
+  border: 1px solid #444; /* Subtle border */
+  background-color: #070F2B; /* Deep navy blue for consistency */
+  color: #ffffff; /* White text */
+  font-size: 16px; /* Consistent font size */
+  border-radius: 10px; /* Softer rounded corners */
   outline: none;
+  transition: border-color 0.3s ease; /* Smooth border color transition */
 }
 
 .form-group input:focus,
@@ -72,33 +73,57 @@
 
 /* Submit Button */
 .submit-button {
-  padding: 12px 24px;
-  font-size: 18px;
+  padding: 14px 28px; /* Increased padding for prominence */
+  font-size: 16px; /* Consistent font size */
   font-weight: 600;
-  color: #ffffff;
+  color: #ffffff; /* White text */
   background-color: #f39c12; /* Accent color */
   border: none;
-  border-radius: 8px;
+  border-radius: 10px; /* Softer rounded corners */
   cursor: pointer;
   text-transform: uppercase;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  margin-top: 20px; /* Spacing above button */
 }
 
 .submit-button:hover {
-  background-color: #d35400; /* Darker shade */
-  transform: scale(1.05); /* Slight hover effect */
+  background-color: #e67e22; /* Slightly darker shade */
+  transform: scale(1.05); /* Subtle hover effect */
 }
 
 /* Success and Error Messages */
-.success-message {
-  color: #28a745;
+.success-message,
+.error-message {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 15px; /* Spacing above message */
+  font-size: 16px; /* Consistent font size */
+}
+
+.success-message {
+  color: #28a745; /* Success color */
 }
 
 .error-message {
-  color: #dc3545;
-  text-align: center;
-  margin-top: 10px;
+  color: #dc3545; /* Error color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .contact-container {
+    max-width: 100%;
+  }
+
+  .contact-form .form-group {
+    margin-bottom: 20px; /* Reduced spacing on smaller screens */
+    margin-right: 20px;
+  }
+
+  .submit-button {
+    padding: 12px 24px; /* Adjusted padding for smaller screens */
+    font-size: 14px; /* Reduced font size */
+  }
 }

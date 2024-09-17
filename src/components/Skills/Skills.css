@@ -1,74 +1,101 @@
-/* Skills Section */
+/* General Styling */
 .skills-section {
-  background-color: #070F2B; /* Deep navy blue */
-  border-radius: 15px;
-  padding: 50px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-  margin: 30px auto;
+  padding: 60px; /* Increased padding for a spacious feel */
+  background-color: #1B1A55; /* Dark blue for consistency */
+  color: #e0e0e0; /* Light gray text for readability */
+  margin: 40px auto; /* Increased margin for separation */
   max-width: 1200px;
+  border-radius: 20px; /* Softer rounded corners */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7); /* Deeper shadow for added depth */
   position: relative;
   overflow: hidden;
 }
 
-/* Section Title */
 .skills-section h3 {
-  text-align: center;
-  font-size: 32px;
+  font-size: 36px; /* Prominent font size */
   color: #f39c12; /* Accent color */
-  margin-bottom: 30px;
   font-weight: 700;
+  margin-bottom: 40px; /* Increased spacing */
+  text-align: center;
+  position: relative;
 }
 
 .skills-section h3::after {
   content: '';
   display: block;
   width: 100px;
-  height: 4px;
+  height: 5px;
   background-color: #f39c12; /* Accent color */
-  margin: 15px auto 0;
-  border-radius: 2px;
+  margin: 15px auto 0; /* Adjusted margin */
+  border-radius: 3px;
 }
 
-/* Skills Container */
-.skills-container {
+/* Category Styling */
+.skills-category {
+  margin-bottom: 40px; /* Spacing between categories */
+}
+
+.skills-category h4 {
+  font-size: 28px; /* Slightly smaller font size for category titles */
+  color: #f39c12; /* Accent color */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills-category-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px; /* Space between skill items */
+  gap: 30px; /* Spacing between skill items */
+  justify-content: center; /* Center alignment */
 }
 
-/* Skill Item */
+/* Skill Item Styling */
 .skill-item {
+  background-color: #070F2B; /* Deep navy blue for consistency */
+  border-radius: 15px; /* Softer rounded corners */
+  padding: 20px;
   text-align: center;
-  width: 100%;
-  max-width: 250px;
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-item img {
-  width: 80px;
-  height: 80px;
-  border-radius: 20%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60px; /* Consistent size */
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px; /* Space between image and text */
 }
 
 .skill-item p {
   font-size: 16px;
-  color: #e0e0e0; /* Light gray text */
+  color: #e0e0e0; /* Light gray text for readability */
 }
 
-/* Hover Effect */
 .skill-item:hover {
-  transform: scale(1.05);
-}
-
-.skill-item:hover p {
-  color: #f39c12; /* Accent color */
+  transform: scale(1.05); /* Slight hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .skill-item {
-    max-width: 100%;
+  .skills-section h3 {
+    font-size: 28px;
+  }
+
+  .skills-category h4 {
+    font-size: 24px;
+  }
+
+  .skills-category-items {
+    gap: 20px; /* Reduced spacing between items */
+  }
+
+  .skill-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skill-item p {
+    font-size: 14px;
   }
 }
