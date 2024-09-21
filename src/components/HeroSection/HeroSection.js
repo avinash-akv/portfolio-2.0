@@ -8,7 +8,7 @@ function HeroSection() {
     <section className="hero-section">
       <div className="hero-content">
         <h1>Hi, I'm Avinash Kumar Verma</h1>
-        <h2>Data Analyst & Graphic Designer</h2>
+        <h2>Data Analyst & Frontend Developer</h2>
         <div className="social-links">
           <a href="https://www.linkedin.com/in/avinash-kumar-verma" 
              target="_blank" 
