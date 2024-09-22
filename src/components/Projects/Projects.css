@@ -1,152 +1,173 @@
-/* Projects Section */
 .projects-section {
-  background-color: #1B1A55; /* Dark blue for consistency */
-  border-radius: 20px; /* Softer rounded corners */
-  padding: 60px; /* Increased padding for a spacious feel */
-  margin: 40px auto; /* Increased margin for separation */
+  background-color: #1B1A55;
+  border-radius: 20px;
+  padding: 60px;
+  margin: 40px auto;
   max-width: 1200px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7); /* Deeper shadow for added depth */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
   position: relative;
   overflow: hidden;
 }
 
-/* Section Title */
 .projects-section h3 {
   text-align: center;
-  font-size: 36px; /* Larger font size for prominence */
-  color: #f39c12; /* Accent color */
-  margin-bottom: 40px; /* Increased spacing */
+  font-size: 36px;
+  color: #f39c12;
+  margin-bottom: 40px;
   font-weight: bold;
 }
 
 .projects-section h3::after {
   content: '';
   display: block;
-  width: 120px; /* Wider underline */
-  height: 5px; /* Thicker underline */
-  background-color: #f39c12; /* Accent color */
+  width: 120px;
+  height: 5px;
+  background-color: #f39c12;
   margin: 20px auto 0;
-  border-radius: 5px; /* Rounded corners for underline */
+  border-radius: 5px;
 }
 
-/* Row Layout for Cards */
 .row {
   display: flex;
   flex-direction: column;
-  gap: 40px; /* Increased gap for separation */
+  gap: 30px;
 }
 
-/* Card Horizontal Layout */
 .card {
-  background-color: #070F2B; /* Deep navy blue background */
-  border-radius: 20px; /* Softer rounded corners */
+  background-color: #070F2B;
+  border-radius: 20px;
   display: flex;
   overflow: hidden;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6); /* Enhanced shadow */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); /* Deeper shadow on hover */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
 }
 
 .card-image {
-  flex: 1;
+  flex: 1.4;
 }
 
 .card-image img {
-  width: 100%;
-  height: 100%;
+  padding-top: 35px;
+  width: 100%; 
+  height: auto; 
   object-fit: cover;
-  border-radius: 20px 0 0 20px; /* Rounded corners on the image side */
+  border-radius: 20px 0 0 20px; 
 }
 
-/* Card Content */
 .card-content {
   flex: 2;
-  padding: 15px; /* Increased padding for better readability */
+  padding: 25px; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .card-title {
-  font-size: 24px; /* Larger font size */
-  color: #f39c12; /* Accent color for title */
-  
+  font-size: 24px;
+  color: #f39c12;
   font-weight: bold;
 }
 
 .card-content p {
-  font-size: 15px; /* Larger font size */
-  color: #e0e0e0; /* Light gray text */
-  line-height: 1.6;
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 1.8;
 }
 
-/* Technologies Section */
-.technologies {
-  margin-top: 10px; /* Increased spacing */
-}
+
 
 .technologies h5 {
-  color: #f39c12; /* Accent color for heading */
-  font-size: 18px; /* Larger font size */
-  margin-bottom: 15px; /* Increased margin */
+  color: #f39c12;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .technologies .badge {
   display: inline-block;
-  background-color: #e4c89a; /* Accent color for badges */
-  color: #070F2B; /* Deep navy blue text */
+  background-color: #e4c89a;
+  color: #070F2B;
   padding: 10px 20px;
-  border-radius: 25px; /* Larger border radius */
-  font-size: 0.8em;
+  border-radius: 25px;
+  font-size: 0.85em;
   font-weight: 600;
-  margin-right: 12px; /* Increased margin */
-
+  margin-right: 12px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .technologies .badge:hover {
-  background-color: #e67e22; /* Slightly darker orange for hover effect */
+  background-color: #e67e22;
   transform: scale(1.05);
 }
 
-/* Card Action (Buttons) */
 .card-action {
-  margin-top: 20px; /* Increased margin for spacing */
+  margin-top: 20px;
   display: flex;
-  gap: 20px; /* More space between buttons */
+  gap: 20px;
 }
 
 .card-action a {
   color: #fff;
-  background-color: #f39c12; /* Accent color for buttons */
+  background-color: #f39c12;
   font-weight: bold;
-  font-size: 12px; /* Larger font size */
-  padding: 14px 20px;
-  border-radius: 10px; /* Larger border radius */
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: 10px;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .card-action a:hover {
-  background-color: #e67e22; /* Slightly darker orange for hover */
+  background-color: #e67e22;
   transform: scale(1.05);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .row {
+    gap: 25px;
+  }
+
   .card {
     flex-direction: column;
   }
 
-  .row {
-    gap: 40px; /* Adjust gap for smaller screens */
+  .card-image {
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
   }
 
   .card-content {
     padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-content {
+    padding: 15px;
+  }
+
+  .projects-section h3 {
+    font-size: 28px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+  }
+
+  .card-action a {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  .technologies .badge {
+    margin: 4px;
   }
 }

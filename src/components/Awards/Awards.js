@@ -22,14 +22,14 @@ const awardsData = [
 
 function Awards() {
   return (
-    <section className="awards-section">
+    <section id="awards" className="awards-section">
       <div className="awards-content">
-        <h2>Awards & Certifications</h2>
+        <h2 className="awards-title">Awards & Certifications</h2>
         <ul className="awards-list">
           {awardsData.map((award, index) => (
             <li key={index} className="award-item">
-              <h3>{award.title}</h3>
-              <p>{award.issuer} - {award.year}</p>
+              <h3 className="award-title">{award.title}</h3>
+              <p className="award-details">{award.issuer} - {award.year}</p>
             </li>
           ))}
         </ul>

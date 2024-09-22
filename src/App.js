@@ -8,8 +8,8 @@ import Education from './components/Education/Education';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import ResumePage from './components/ResumePage/ResumePage'; // Import ResumePage
-import Awards from './components/Awards/Awards'; // Import Awards component
+import ResumePage from './components/ResumePage/ResumePage';
+import Awards from './components/Awards/Awards'; 
 import './App.css';
 
 function App() {
@@ -17,7 +17,6 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        {/* Routes for navigation between sections */}
         <Routes>
           <Route path="/" element={
             <>
@@ -26,12 +25,12 @@ function App() {
               <Skills />
               <Education />
               <Projects />
-              <Awards /> {/* Add the Awards section */}
+              <Awards /> 
               <Contact />
               <Footer />
             </>
           } />
-          <Route path="/resume" element={<ResumePage />} /> {/* Route for resume */}
+          <Route path="/resume" element={<ResumePage />} /> 
         </Routes>
       </div>
     </Router>

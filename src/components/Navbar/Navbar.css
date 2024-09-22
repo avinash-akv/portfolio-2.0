@@ -1,18 +1,19 @@
 /* Navbar Styles */
 .nav-wrapper {
-  background-color: #070F2B;
+  background-color: rgba(7, 15, 43, 0.8); /* Transparent navy background */
   color: #ffffff;
-  border-bottom: 1px solid #1B1A55;
+  border-bottom: 1px solid rgba(27, 26, 85, 0.6); /* Slightly transparent border */
   padding: 10px 20px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .nav-wrapper.scrolled {
+  background-color: rgba(7, 15, 43, 1); /* Solid background when scrolled */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -108,7 +109,7 @@
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #040b21;
+    background-color: rgba(4, 11, 33, 0.9); /* Transparent background for mobile */
     width: 100%;
     border-radius: 0 0 15px 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);

@@ -1,8 +1,9 @@
 import React from 'react';
 import './Projects.css';
-import project1Image from '../../images/projects/project 1 logo.jpg';
-import project2Image from '../../images/projects/project 2 logo.gif';
+import project1Image from '../../images/projects/project 1 logo.png';
+import project2Image from '../../images/projects/project 2 logo.png';
 import project3Image from '../../images/projects/project 3 logo.png';
+import project4Image from '../../images/projects/project 4 logo.png';
 
 function Projects() {
   return (
@@ -69,6 +70,33 @@ function Projects() {
           <div className="card">
             <div className="card-image">
               <img src={project3Image} alt="Project 3" />
+            </div>
+            <div className="card-content">
+              <h4 className="card-title">Job Tracker</h4>
+              <p>
+                Developed a web application that allows users to manually store and manage details of their job applications across various platforms. This tool simplifies the job application process by providing a centralized system for tracking and organizing application information.
+              </p>
+              <div className="technologies">
+                <h5>Technologies Used:</h5>
+                <span className="badge">Flask</span>
+                <span className="badge">Javascript</span>
+                <span className="badge">Html</span>
+                <span className="badge">CSS</span>
+                <span className="badge">MySQL</span>
+              </div>
+              <div className="card-action">
+                <a href="https://github.com/avinash-akv/Job-tracker">Live Demo</a>
+                <a href="https://github.com/avinash-akv/Job-tracker">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Project 4 */}
+        <div className="col">
+          <div className="card">
+            <div className="card-image">
+              <img src={project4Image} alt="Project 4" />
             </div>
             <div className="card-content">
               <h4 className="card-title">Portfolio Website</h4>

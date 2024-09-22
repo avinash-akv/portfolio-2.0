@@ -19,8 +19,8 @@ function Navbar() {
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#education">Education</a></li>
+          <li><a href="#awards">Awards</a></li> 
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#awards">Awards</a></li> {/* Added Awards link */}
         </ul>
         <div className="menu-toggle" onClick={toggleMenu}>
           ☰

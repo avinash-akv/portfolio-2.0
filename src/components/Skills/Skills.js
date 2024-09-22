@@ -9,11 +9,8 @@ import sqlImage from '../../images/skills/sql.png';
 import powerbiImage from '../../images/skills/power bi.png';
 import excelImage from '../../images/skills/EXCEL.png';
 import wordImage from '../../images/skills/WORD.png';
-import photoshopImage from '../../images/skills/photoshop.png';
-import illustratorImage from '../../images/skills/illustrator.png';
 import ReactImage from '../../images/skills/react.png';
 import TailwindImage from '../../images/skills/tailwind.png';
-import CanvaImage from '../../images/skills/canva.png';
 import vscodeImage from '../../images/skills/vscode.png';
 import GitImage from '../../images/skills/git.png';
 import GithubImage from '../../images/skills/github.png';
@@ -61,8 +58,8 @@ function Skills() {
           </div>
         </div>
         <div className="skills-category">
-          <h4>Data & Design Tools</h4>
-          <div className="skills-category-items"> 
+          <h4>Other Tools & Technologies</h4>
+          <div className="skills-category-items">
             <div className="skill-item">
               <img src={powerbiImage} alt="Power BI" />
               <p>Power BI</p>
@@ -76,23 +73,6 @@ function Skills() {
               <p>Word</p>
             </div>
             <div className="skill-item">
-              <img src={photoshopImage} alt="Photoshop" />
-              <p>Photoshop</p>
-            </div>
-            <div className="skill-item">
-              <img src={illustratorImage} alt="Illustrator" />
-              <p>Illustrator</p>
-            </div>
-            <div className="skill-item">
-              <img src={CanvaImage} alt="Canva" />
-              <p>Canva</p>
-            </div>
-          </div>
-        </div>
-        <div className="skills-category">
-          <h4>Other Tools & Technologies</h4>
-          <div className="skills-category-items">
-          <div className="skill-item">
               <img src={vscodeImage} alt="Vs Code" />
               <p>VS Code</p>
             </div>
