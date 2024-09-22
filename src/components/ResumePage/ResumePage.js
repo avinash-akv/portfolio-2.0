@@ -10,7 +10,7 @@ function ResumePage() {
         <h1 className="resume-title">Resume</h1>
         
         {/* Embed the resume PDF */}
-        <embed src={resume} width="100%" height="800px" type="application/pdf" className="resume-pdf" />
+        <embed src={resume} width="100%" height="800px" type="application/pdf" className="Resume-pdf" />
 
         {/* Download Button */}
         <a href={resume} download className="resume-download-btn">
