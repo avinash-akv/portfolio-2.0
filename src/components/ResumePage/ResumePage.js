@@ -1,6 +1,6 @@
 import React from 'react';
 import './ResumePage.css'; // Import the updated CSS file
-import resume from '../../images/Resume.pdf'; // Adjust the path based on your folder structure
+import resume from '../../images/resume.pdf'; // Adjust the path based on your folder structure
 import Footer from '../Footer/Footer'; 
 
 function ResumePage() {
@@ -10,7 +10,7 @@ function ResumePage() {
         <h1 className="resume-title">Resume</h1>
         
         {/* Embed the resume PDF */}
-        <embed src={resume} width="100%" height="800px" type="application/pdf" className="Resume-pdf" />
+        <embed src={resume} width="100%" height="800px" type="application/pdf" className="resume-pdf" />
 
         {/* Download Button */}
         <a href={resume} download className="resume-download-btn">
